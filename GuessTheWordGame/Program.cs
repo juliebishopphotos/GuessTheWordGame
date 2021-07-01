@@ -10,7 +10,8 @@ namespace GuessTheWordGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Hangman!\n" +
+            Console.WriteLine("Welcome to Guess The Word!\n" +
+                "You will continue guessing individual letters until you can solve the word. Good luck!\n" +
                "Press ENTER to continue....");
             Console.ReadKey();
 
@@ -62,7 +63,7 @@ namespace GuessTheWordGame
 
                 if (lives == 0)
                 {
-                    Console.WriteLine("HANGMAN! Better luck next time.");
+                    Console.WriteLine("YOU LOSE! Better luck next time.");
                     keepRunning = false;
                 }
 
